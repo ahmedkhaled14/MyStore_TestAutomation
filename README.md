@@ -20,6 +20,8 @@
  
  *Fluent design approach*
  
+ *Java Docs*
+ 
  - ### Covered Test cases in this project :
 #### 1. Test Case - Automate User Registration process.
  Steps to Automate:
@@ -96,5 +98,8 @@ Steps to Automate:
 12. Change the quantity to 2.
 13. Verify that Total price is changing and reflecting correct price.
 Similar way you can add few more test cases.
+
+#### NB: If you wish to use SHAFT with IntelliJ please apply these settings:
+Run/Debug Configurations > Edit Configurations... > Templates > TestNG > Configuration > Listeners > Add all SHAFT_Engine Listeners [AlterSuite, InvokedMethod, Suite]
  
  
