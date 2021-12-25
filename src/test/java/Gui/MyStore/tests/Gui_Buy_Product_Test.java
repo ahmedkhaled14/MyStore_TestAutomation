@@ -1,7 +1,7 @@
 package Gui.MyStore.tests;
 
-import Gui.MyStore.pages.MyStore_OrderConfirmation_Page;
-import Gui.MyStore.pages.MyStore_SignIn_Page_1;
+import Gui.MyStore.pages.Order_Pages.MyStore_OrderConfirmation_Page;
+import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
 import com.shaft.driver.DriverFactory;
 import com.shaft.tools.io.JSONFileManager;
 import com.shaft.validation.Validations;

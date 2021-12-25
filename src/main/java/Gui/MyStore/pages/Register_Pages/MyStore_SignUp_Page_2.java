@@ -1,4 +1,4 @@
-package Gui.MyStore.pages;
+package Gui.MyStore.pages.Register_Pages;
 
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;

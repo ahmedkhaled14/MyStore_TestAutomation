@@ -1,0 +1,20 @@
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[Gui.MyStore.tests.Gui_Add_to_Wishlist_Test.Add_to_Wishlist]
+Test Description:	[Verify that 'Add to Wishlist' only works after login]
+################################################################################################################################################
+[ReportManager] Target URL: [http://automationpractice.com/index.php] @24-12-2021 18:34:05.0926 PM
+[ReportManager] Initial URL: [data:,] @24-12-2021 18:34:06.0052 PM
+[ReportManager] File Action [CreateFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20211224-183405", Target File: "\1640399671813_Add_to_Wishlist.gif"]. @24-12-2021 18:34:41.0854 PM
+[ReportManager] Browser Action [NavigateToURL] successfully performed. With the following test data [http://automationpractice.com/index.php]. @24-12-2021 18:34:45.0121 PM
+[ReportManager] Element Action [Hover] successfully performed. @24-12-2021 18:34:49.0223 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [T-shirts]. @24-12-2021 18:34:54.0028 PM
+[ReportManager] Element Action [Hover] successfully performed. @24-12-2021 18:34:54.0887 PM
+[ReportManager] Element Action [Click] successfully performed. With the following test data [Add to Wishlist]. @24-12-2021 18:34:56.0182 PM
+[ReportManager] Element Action [GetText] successfully performed. With the following test data [You must be logged in to manage your wishlist.]. @24-12-2021 18:34:57.0347 PM
+[ReportManager] Loaded Shared OpenCV @24-12-2021 18:35:09.0611 PM
+[ReportManager] Assertion Passed: Verify that error message is displayed 'You must be logged in to manage your wish list. @24-12-2021 18:35:10.0711 PM
+[ReportManager] Successfully created attachment [Screenshot - 1640399697681_Add_to_Wishlist_ValidateElementAttribute_passed] @24-12-2021 18:35:10.0905 PM
+[ReportManager] Assertion [ValidateElementAttribute] PASSED. Expected [Value Should be 'You must be logged in to manage your wishlist.' for the 'text' attribute, element locator 'By.xpath: //p[contains(.,'You must be logged in to manage your wishlist.')]'] and Actual [You must be logged in to manage your wishlist.]. Comparison Type [EQUALS]. Validation Type [POSITIVE]. @24-12-2021 18:35:10.0905 PM
+[ReportManager] Successfully created attachment [Animated Gif - Add_to_Wishlist] @24-12-2021 18:35:10.0930 PM

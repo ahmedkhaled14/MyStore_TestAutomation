@@ -1,4 +1,4 @@
-package Gui.MyStore.pages;
+package Gui.MyStore.pages.Product_Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

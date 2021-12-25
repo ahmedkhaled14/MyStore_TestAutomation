@@ -1,4 +1,4 @@
-package Gui.MyStore.pages;
+package Gui.MyStore.pages.Product_Pages;
 
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
@@ -16,6 +16,8 @@ public class MyStore_Category_Page {
     }
     private By HoverOnTheProduct(){return By.xpath("//img[@title='Faded Short Sleeve T-shirts']");}
     private By More_Button(){return By.xpath("//a[@title='View']");}
+    private By Add_to_Wishlist_Button(){return By.xpath("//a[contains(.,'Add to Wishlist')]");}
+    public static By You_must_be_logged_message(){return By.xpath("//p[contains(.,'You must be logged in to manage your wishlist.')]");}
 
     public MyStore_Category_Page(WebDriver driver){
         this.driver = driver;
@@ -34,6 +36,10 @@ public class MyStore_Category_Page {
     public MyStore_Product_Page Click_On_More_Button_And_Navigate_To_ProductPage(){
         ElementActions.hoverAndClick(driver,HoverOnTheProduct(),More_Button());
         return new MyStore_Product_Page(driver);
+    }
+
+    public void Click_On_Add_to_Wishlist_Button(){
+        ElementActions.hoverAndClick(driver,HoverOnTheProduct(),Add_to_Wishlist_Button());
     }
 
 

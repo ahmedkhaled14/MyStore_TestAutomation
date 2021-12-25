@@ -1,9 +1,9 @@
 package Gui.MyStore.tests;
 
-import Gui.MyStore.pages.MyStore_CreateAccount_Page_3;
-import Gui.MyStore.pages.MyStore_MyAccount_Page_4;
-import Gui.MyStore.pages.MyStore_SignIn_Page_1;
-import Gui.MyStore.pages.MyStore_SignUp_Page_2;
+import Gui.MyStore.pages.Register_Pages.MyStore_CreateAccount_Page_3;
+import Gui.MyStore.pages.Register_Pages.MyStore_MyAccount_Page_4;
+import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
+import Gui.MyStore.pages.Register_Pages.MyStore_SignUp_Page_2;
 import com.shaft.driver.DriverFactory;
 import com.shaft.tools.io.JSONFileManager;
 import com.shaft.validation.Validations;

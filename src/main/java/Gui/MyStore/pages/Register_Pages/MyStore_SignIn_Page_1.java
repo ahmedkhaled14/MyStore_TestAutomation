@@ -1,5 +1,6 @@
-package Gui.MyStore.pages;
+package Gui.MyStore.pages.Register_Pages;
 
+import Gui.MyStore.pages.Product_Pages.MyStore_Category_Page;
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;

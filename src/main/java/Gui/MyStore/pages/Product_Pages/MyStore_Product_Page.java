@@ -1,5 +1,6 @@
-package Gui.MyStore.pages;
+package Gui.MyStore.pages.Product_Pages;
 
+import Gui.MyStore.pages.Order_Pages.MyStore_Order_Page;
 import com.shaft.gui.element.ElementActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
