@@ -25,23 +25,33 @@ public class MyStore_SignIn_Page_1 {
         this.driver = driver;
     }
 
-
+    /**
+     * @return navigate To My Store URL
+     */
     public MyStore_SignIn_Page_1 navigateToURL() {
         BrowserActions.navigateToURL(driver, URl);
         return this;
     }
 
+    /**
+     * @return Move_cursor_over_Women_link
+     */
     public MyStore_SignIn_Page_1 Move_cursor_over_Women_link(){
         ElementActions.hover(driver,Women_Tab());
         return this;
     }
+
+    /**
+     * @return Click_on_Tshirt_Tab
+     */
     public MyStore_Category_Page Click_on_Tshirt_Tab(){
         ElementActions.click(driver,Tshirt_Tab());
         return new MyStore_Category_Page(driver);
     }
 
-
-
+    /**
+     * @return MyStore_SignUp_Page_2
+     */
     public MyStore_SignUp_Page_2 clickOn_SignIn_button_For_NavigateTo_SignUp_Page() {
         ElementActions.click(driver, signIn_button());
         return new MyStore_SignUp_Page_2(driver);

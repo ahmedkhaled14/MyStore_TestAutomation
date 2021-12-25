@@ -1,0 +1,21 @@
+{
+  "customer_firstName": "Ahmed",
+  "customer_lastname": "Khaled",
+  "password": "password@",
+  "days": 2,
+  "months": "March",
+  "years": 2021,
+  "firstName": "Ahmed",
+  "lastname": "Khaled",
+  "company": "Real Madrid",
+  "address1": "RealMadrid123",
+  "address2": "RealMadrid456",
+  "city": "Los Angeles",
+  "state": "California",
+  "postcode": 90201,
+  "country": "United States",
+  "additional_information": "Maybe one day in California Who knows !!",
+  "home_phone": 155516857,
+  "phone_mobile": 354517852,
+  "alias": "california2"
+}

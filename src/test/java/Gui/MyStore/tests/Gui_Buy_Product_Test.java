@@ -14,14 +14,14 @@ import org.testng.annotations.Test;
 @Feature("GUI")
 public class Gui_Buy_Product_Test {
     WebDriver driver;
-    JSONFileManager loginDataJson;
-    JSONFileManager BuyProductJson;
+    private JSONFileManager loginDataJson;
+    private JSONFileManager BuyProductJson;
 
     @BeforeMethod
-    public void beforeMethod(){
+    public void beforeMethod() {
         driver = DriverFactory.getDriver();
-        loginDataJson =new JSONFileManager(System.getProperty("loginDataJson"));
-        BuyProductJson = new JSONFileManager("src/test/resources/testDataFiles/MyStoreRegistrationData/OrderTestData/BuyProduct.json");
+        loginDataJson = new JSONFileManager(System.getProperty("loginDataJson"));
+        BuyProductJson = new JSONFileManager(System.getProperty("BuyProductJson"));
     }
 
 
@@ -33,14 +33,14 @@ public class Gui_Buy_Product_Test {
     @Severity(SeverityLevel.CRITICAL)
     @Story("End-To-End Buy Product ")
     @Test(description = "Buy Product")
-    public void Buy_Product(){
+    public void Buy_Product() {
         new MyStore_SignIn_Page_1(driver)
                 .navigateToURL()
                 .clickOn_SignIn_button_For_NavigateTo_SignUp_Page()
-                .ValidSignIn(loginDataJson.getTestData("Email"),loginDataJson.getTestData("Password"))
+                .ValidSignIn(loginDataJson.getTestData("Email"), loginDataJson.getTestData("Password"))
                 .Move_cursor_over_Women_link_And_Click_on_Tshirt_Tab()
                 .Click_On_More_Button_And_Navigate_To_ProductPage()
-                .Increase_quantity(Integer.parseInt(BuyProductJson.getTestData("ProductQuantity")))
+                .Select_quantity(Integer.parseInt(BuyProductJson.getTestData("ProductQuantity")))
                 .Select_Size(BuyProductJson.getTestData("productSize"))
                 .Choose_Color()
                 .Click_Add_To_Cart_Button()

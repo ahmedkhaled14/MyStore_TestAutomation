@@ -42,9 +42,9 @@ public class Gui_Register_Test {
                         registrationDataJson.getTestData("customer_firstName"),
                         registrationDataJson.getTestData("customer_lastname"),
                         registrationDataJson.getTestData("password") + Util.GenerateCurrentDateAndTime(),
-                        registrationDataJson.getTestData("days"),
+                        Integer.parseInt(registrationDataJson.getTestData("days")),
                         registrationDataJson.getTestData("months"),
-                        registrationDataJson.getTestData("years"),
+                        Integer.parseInt(registrationDataJson.getTestData("years")),
                         registrationDataJson.getTestData("firstName"),
                         registrationDataJson.getTestData("lastname"),
                         registrationDataJson.getTestData("company"),
@@ -52,11 +52,11 @@ public class Gui_Register_Test {
                         registrationDataJson.getTestData("address2"),
                         registrationDataJson.getTestData("city"),
                         registrationDataJson.getTestData("state"),
-                        registrationDataJson.getTestData("postcode"),
+                        Integer.parseInt(registrationDataJson.getTestData("postcode")),
                         registrationDataJson.getTestData("country"),
                         registrationDataJson.getTestData("additional_information"),
-                        registrationDataJson.getTestData("home_phone"),
-                        registrationDataJson.getTestData("phone_mobile"),
+                        Integer.parseInt(registrationDataJson.getTestData("home_phone")),
+                        Integer.parseInt(registrationDataJson.getTestData("phone_mobile")),
                         registrationDataJson.getTestData("alias")
                 )
                 .ClickOn_SubmitAccount_For_NavigateTo_My_Account_page();
@@ -92,7 +92,7 @@ public class Gui_Register_Test {
     }
 
     @Description("Given the browser is open, When i navigate to My Store URl, And click on sign in button, And Type Valid New Email,And navigate to create account page," +
-            " And Add new account registration data Without mandatory fields, Then an error message is displaying saying There are 9 errors.")
+            " And Add new account registration data Without mandatory fields, Then an error message is displaying saying There are 3 errors.")
     @Severity(SeverityLevel.CRITICAL)
     @Story("Registration")
     @Test(description = "Verify error messages for mandatory fields")
@@ -106,21 +106,21 @@ public class Gui_Register_Test {
                         "",
                         "",
                         "",
-                        registrationDataJson.getTestData("days"),
+                        Integer.parseInt(registrationDataJson.getTestData("days")),
                         registrationDataJson.getTestData("months"),
-                        registrationDataJson.getTestData("years"),
-                        "",
-                        "",
+                        Integer.parseInt(registrationDataJson.getTestData("years")),
+                        registrationDataJson.getTestData("firstName"),
+                        registrationDataJson.getTestData("lastname"),
                         registrationDataJson.getTestData("company"),
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
+                        registrationDataJson.getTestData("address1"),
+                        registrationDataJson.getTestData("address2"),
+                        registrationDataJson.getTestData("city"),
+                        registrationDataJson.getTestData("state"),
+                        Integer.parseInt(registrationDataJson.getTestData("postcode")),
+                        registrationDataJson.getTestData("country"),
                         registrationDataJson.getTestData("additional_information"),
-                        "",
-                        "",
+                        Integer.parseInt(registrationDataJson.getTestData("home_phone")),
+                        Integer.parseInt(registrationDataJson.getTestData("phone_mobile")),
                         registrationDataJson.getTestData("alias")
                 )
                 .ClickOn_SubmitAccount_For_NavigateTo_My_Account_page();
@@ -128,8 +128,8 @@ public class Gui_Register_Test {
         Validations.assertThat()
                 .element(driver, MyStore_CreateAccount_Page_3.mandatory_fields_error_message_Locator())
                 .text()
-                .contains("There are 9 errors")
-                .withCustomReportMessage("assert that an error message is displaying saying There are 9 errors.")
+                .contains("There are 3 errors")
+                .withCustomReportMessage("assert that an error message is displaying saying There are 3 errors.")
                 .perform();
 
     }

@@ -12,6 +12,10 @@ public class MyStore_OrderSummary_Page {
         this.driver = driver;
     }
 
+    /**
+     *
+     * @return MyStore_OrderConfirmation_Page
+     */
     public MyStore_OrderConfirmation_Page Click_On_Confirm_Order(){
         ElementActions.click(driver,confirm_Order());
         return new MyStore_OrderConfirmation_Page(driver);

@@ -8,6 +8,9 @@ import org.openqa.selenium.WebDriver;
 public class MyStore_MyAccount_Page_4 {
     WebDriver driver;
 
+    /**
+     * @return View Account Text locator
+     */
     public static By ViewAccountText() {
         return By.xpath("//a[@title='View my customer account']");
     }
@@ -20,6 +23,9 @@ public class MyStore_MyAccount_Page_4 {
         this.driver = driver;
     }
 
+    /**
+     * @return MyStore_Category_Page
+     */
     public MyStore_Category_Page Move_cursor_over_Women_link_And_Click_on_Tshirt_Tab(){
         ElementActions.hover(driver,Women_Tab());
         ElementActions.click(driver,Tshirt_Tab());

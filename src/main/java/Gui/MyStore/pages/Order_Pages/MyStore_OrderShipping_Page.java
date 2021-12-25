@@ -14,11 +14,17 @@ public class MyStore_OrderShipping_Page {
         this.driver= driver;
     }
 
+    /**
+     * @return agree To The terms on MyStore_OrderShipping_Page
+     */
     public MyStore_OrderShipping_Page agree_To_The_terms(){
         ElementActions.click(driver,agree_terms());
         return this;
     }
 
+    /**
+     * @return MyStore_OrderPayment_Page
+     */
     public MyStore_OrderPayment_Page Click_On_Proceed_to_checkout_On_ShippingPage(){
         ElementActions.click(driver,Proceed_to_checkout_locator());
         return new MyStore_OrderPayment_Page(driver);

@@ -95,6 +95,9 @@ public class MyStore_CreateAccount_Page_3 {
         return By.id("submitAccount");
     }
 
+    /**
+     * @return mandatory_fields_error_message_Locator
+     */
     public static By mandatory_fields_error_message_Locator(){
         return By.xpath("//p[contains(text(),'There are ')]");
     }
@@ -103,20 +106,43 @@ public class MyStore_CreateAccount_Page_3 {
         this.driver = driver;
     }
 
+    /**
+     *
+     * @param customer_firstName String Value Form RegisterTestData (RegistrationData.json)
+     * @param customer_lastname String Value Form RegisterTestData (RegistrationData.json)
+     * @param password String Value Form RegisterTestData (RegistrationData.json)
+     * @param days int Value Form RegisterTestData (RegistrationData.json)
+     * @param months String Value Form RegisterTestData (RegistrationData.json)
+     * @param years int Value Form RegisterTestData (RegistrationData.json)
+     * @param firstName String Value Form RegisterTestData (RegistrationData.json)
+     * @param lastname String Value Form RegisterTestData (RegistrationData.json)
+     * @param company String Value Form RegisterTestData (RegistrationData.json)
+     * @param address1 String Value Form RegisterTestData (RegistrationData.json)
+     * @param address2 String Value Form RegisterTestData (RegistrationData.json)
+     * @param city String Value Form RegisterTestData (RegistrationData.json)
+     * @param state String Value Form RegisterTestData (RegistrationData.json)
+     * @param postcode int Value Form RegisterTestData (RegistrationData.json)
+     * @param country String Value Form RegisterTestData (RegistrationData.json)
+     * @param additional_information String Value Form RegisterTestData (RegistrationData.json)
+     * @param home_phone int Value Form RegisterTestData (RegistrationData.json)
+     * @param phone_mobile int Value Form RegisterTestData (RegistrationData.json)
+     * @param alias String Value Form RegisterTestData (RegistrationData.json)
+     * @return  Add NewAccount Registration Data
+     */
     public MyStore_CreateAccount_Page_3 Add_NewAccount_registration_Data
             (
                     String customer_firstName, String customer_lastname, String password,
-                    String days, String months, String years, String firstName, String lastname, String company,
-                    String address1, String address2, String city, String state, String postcode, String country,
-                    String additional_information, String home_phone, String phone_mobile, String alias
+                    int days, String months, int years, String firstName, String lastname, String company,
+                    String address1, String address2, String city, String state, int postcode, String country,
+                    String additional_information, int home_phone, int phone_mobile, String alias
             ) {
         ElementActions.click(driver, title());
         ElementActions.type(driver, customer_firstName(), customer_firstName);
         ElementActions.type(driver, customer_lastname(), customer_lastname);
         ElementActions.type(driver, password(), password);
-        ElementActions.select(driver, days(), days);
+        ElementActions.select(driver, days(), String.valueOf(days));
         ElementActions.select(driver, months(), months);
-        ElementActions.select(driver, years(), years);
+        ElementActions.select(driver, years(), String.valueOf(years));
         ElementActions.click(driver, Receive_special_offers());
         ElementActions.type(driver, firstName(), firstName);
         ElementActions.type(driver, lastname(), lastname);
@@ -125,15 +151,19 @@ public class MyStore_CreateAccount_Page_3 {
         ElementActions.type(driver, address2(), address2);
         ElementActions.type(driver, city(), city);
         ElementActions.select(driver, state(), state);
-        ElementActions.type(driver, postcode(), postcode);
+        ElementActions.type(driver, postcode(), String.valueOf(postcode));
         ElementActions.select(driver, country(), country);
         ElementActions.type(driver, additional_information(), additional_information);
-        ElementActions.type(driver, home_phone(), home_phone);
-        ElementActions.type(driver, phone_mobile(), phone_mobile);
+        ElementActions.type(driver, home_phone(), String.valueOf(home_phone));
+        ElementActions.type(driver, phone_mobile(), String.valueOf(phone_mobile));
         ElementActions.type(driver, alias(), alias);
         return this;
     }
 
+    /**
+     *
+     * @return MyStore_MyAccount_Page_4
+     */
     public MyStore_MyAccount_Page_4 ClickOn_SubmitAccount_For_NavigateTo_My_Account_page() {
         ElementActions.click(driver, submitAccount());
         return new MyStore_MyAccount_Page_4(driver);

@@ -18,7 +18,7 @@ public class MyStore_Product_Page {
         this.driver = driver;
     }
 
-    public MyStore_Product_Page Increase_quantity(int WantedQuantity){
+    public MyStore_Product_Page Select_quantity(int WantedQuantity){
         ElementActions.type(driver,quantity_wanted(), String.valueOf(WantedQuantity));
         return this;
     }
@@ -31,16 +31,26 @@ public class MyStore_Product_Page {
         ElementActions.select(driver,Size_Wanted(),WantedSize);
         return this;
     }
+
+    /**
+     * @return choose Blue Color
+     */
     public MyStore_Product_Page Choose_Color(){
         ElementActions.click(driver,Color_Wanted());
         return this;
     }
 
+    /**
+     * @return Click on Add To Cart Button
+     */
     public MyStore_Product_Page Click_Add_To_Cart_Button (){
        ElementActions.click(driver,Submit());
         return this;
     }
 
+    /**
+     * @return MyStore_Order_Page
+     */
     public MyStore_Order_Page Click_On_Proceed_to_checkout(){
         ElementActions.click(driver,Proceed_to_checkout_locator());
         return new MyStore_Order_Page(driver);

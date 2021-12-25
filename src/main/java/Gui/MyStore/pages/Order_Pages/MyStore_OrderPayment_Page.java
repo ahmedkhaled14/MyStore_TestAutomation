@@ -14,6 +14,9 @@ public class MyStore_OrderPayment_Page {
         this.driver = driver;
     }
 
+    /**
+     * @return MyStore_OrderSummary_Page
+     */
     public MyStore_OrderSummary_Page Click_On_Pay_by_check() {
         ElementActions.click(driver,Pay_by_check());
         return new MyStore_OrderSummary_Page(driver);

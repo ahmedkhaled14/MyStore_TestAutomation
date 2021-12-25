@@ -13,6 +13,9 @@ public class MyStore_OrderAddress_Page {
         this.driver= driver;
     }
 
+    /**
+     * @return MyStore_OrderShipping_Page
+     */
     public MyStore_OrderShipping_Page Click_On_Proceed_to_checkout_On_AddressPage(){
         ElementActions.click(driver,Proceed_to_checkout_locator());
         return new MyStore_OrderShipping_Page(driver);
