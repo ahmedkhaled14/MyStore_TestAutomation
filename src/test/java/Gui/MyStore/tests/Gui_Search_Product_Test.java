@@ -3,9 +3,11 @@ package Gui.MyStore.tests;
 import Gui.MyStore.pages.Product_Pages.MyStore_Searched_Page;
 import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
 import com.shaft.driver.DriverFactory;
+import com.shaft.gui.browser.BrowserActions;
 import com.shaft.validation.Validations;
 import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -37,5 +39,10 @@ public class Gui_Search_Product_Test {
                 .withCustomReportMessage("Validate that same product is displayed on searched page with same details which were displayed on T-Shirt's page")
                 .perform();
 
+    }
+
+    @AfterMethod
+    public void afterMethod(){
+        BrowserActions.closeCurrentWindow(driver);
     }
 }

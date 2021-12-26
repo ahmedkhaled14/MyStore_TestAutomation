@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test  name="MyStore_GUI_TestAutomation" >
+        <classes>
+            <class name="Gui.MyStore.pages.Register_Pages.MyStore_SignUp_Page_2">
+                <methods>
+                    <include name="typeInValidEmail"/>
+                </methods>
+            </class>
+            <class name="Gui.MyStore.tests.Gui_Add_to_Wishlist_Test">
+                <methods>
+                    <include name="Add_to_Wishlist"/>
+                </methods>
+            </class>
+            <class name="Gui.MyStore.tests.Gui_Buy_Product_Test">
+                <methods>
+                    <include name="Buy_Product"/>
+                </methods>
+            </class>
+            <class name="Gui.MyStore.tests.Gui_Register_Test">
+                <methods>
+                    <include name="UserRegistration"/>
+                    <include name="Verify_invalid_email_address_error"/>
+                    <include name="Verify_error_messages_for_mandatory_fields"/>
+                </methods>
+            </class>
+            <class name="Gui.MyStore.tests.Gui_Search_Product_Test">
+                <methods>
+                    <include name="search_Product"/>
+                </methods>
+            </class>
+            <class name="Gui.MyStore.tests.Gui_Shopping_Cart_Test">
+                <methods>
+                    <include name="Shopping_Cart_Summary"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

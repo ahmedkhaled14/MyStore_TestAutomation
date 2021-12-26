@@ -3,9 +3,11 @@ package Gui.MyStore.tests;
 import Gui.MyStore.pages.Product_Pages.MyStore_Category_Page;
 import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
 import com.shaft.driver.DriverFactory;
+import com.shaft.gui.browser.BrowserActions;
 import com.shaft.validation.Validations;
 import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -37,5 +39,10 @@ public class Gui_Add_to_Wishlist_Test {
                 .isEqualTo("You must be logged in to manage your wishlist.")
                 .withCustomReportMessage("Verify that error message is displayed 'You must be logged in to manage your wish list.")
                 .perform();
+    }
+
+    @AfterMethod
+    public void afterMethod(){
+        BrowserActions.closeCurrentWindow(driver);
     }
 }

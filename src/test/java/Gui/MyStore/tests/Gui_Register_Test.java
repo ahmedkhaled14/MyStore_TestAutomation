@@ -5,10 +5,12 @@ import Gui.MyStore.pages.Register_Pages.MyStore_MyAccount_Page_4;
 import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
 import Gui.MyStore.pages.Register_Pages.MyStore_SignUp_Page_2;
 import com.shaft.driver.DriverFactory;
+import com.shaft.gui.browser.BrowserActions;
 import com.shaft.tools.io.JSONFileManager;
 import com.shaft.validation.Validations;
 import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.Util;
@@ -132,6 +134,11 @@ public class Gui_Register_Test {
                 .withCustomReportMessage("assert that an error message is displaying saying There are 3 errors.")
                 .perform();
 
+    }
+
+    @AfterMethod
+    public void afterMethod(){
+        BrowserActions.closeCurrentWindow(driver);
     }
 
 

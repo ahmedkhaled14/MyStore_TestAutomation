@@ -3,10 +3,12 @@ package Gui.MyStore.tests;
 import Gui.MyStore.pages.Order_Pages.MyStore_OrderConfirmation_Page;
 import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
 import com.shaft.driver.DriverFactory;
+import com.shaft.gui.browser.BrowserActions;
 import com.shaft.tools.io.JSONFileManager;
 import com.shaft.validation.Validations;
 import io.qameta.allure.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -59,6 +61,11 @@ public class Gui_Buy_Product_Test {
                 .withCustomReportMessage(" Validate that Product is ordered")
                 .perform();
 
+    }
+
+    @AfterMethod
+    public void afterMethod(){
+        BrowserActions.closeCurrentWindow(driver);
     }
 }
 
