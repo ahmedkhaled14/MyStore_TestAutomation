@@ -2,11 +2,11 @@
  <img  src="https://user-images.githubusercontent.com/68038931/147390936-c6228337-9787-4aab-b5d6-826bc8e4e4a3.gif" alt="test-light" width="1000" height="250" />
  </div>
  
-# *My Store* ==> *GUI* *Test Automation*
-## Automate different functionalities of an E-commerce website called *"My Store"*
+# ✨ *My Store* ==> *GUI* *Test Automation* ✨
+## 🔥 Automate different functionalities of an E-commerce website called *"My Store"*
 ### Website URL: http://automationpractice.com/index.php
  
-- ### The main Frameworks included in the project:
+- ### 📝 The main Frameworks included in the project:
  **SHAFT Engine on the Top of:**
 
  *Selenium Webdriver*
@@ -17,7 +17,9 @@
  
  *Extent Reports*
  
-- ### Project Design:
+ *Remote Execution- Selenium Grid & Docker Compose*
+ 
+-  ### 🏗️ Project Design:
  *Page Object Model (POM) design pattern*
  
  *Data Driven framework*
@@ -26,7 +28,7 @@
  
  *Java Docs*
  
- - ### Covered Test cases in this project :
+ - ### 🔍️ Covered Test cases in this project :
 #### 1. Test Case - Automate User Registration process.
  Steps to Automate:
 1. Open this url  http://automationpractice.com/index.php
@@ -103,7 +105,7 @@ Steps to Automate:
 13. Verify that Total price is changing and reflecting correct price.
 Similar way you can add few more test cases.
 
-#### NB: If you wish to use SHAFT with IntelliJ please apply these settings:
+#### 🏷️ NB: If you wish to use SHAFT with IntelliJ please apply these settings:
 Run/Debug Configurations > Edit Configurations... > Templates > TestNG > Configuration > Listeners > Add all SHAFT_Engine Listeners [AlterSuite, InvokedMethod, Suite]
  
  
