@@ -17,7 +17,7 @@
  
  *Extent Reports*
  
- *Remote Execution ==> Selenium Grid & Docker Compose*
+ *Remote Execution { Selenium Grid4 & Docker Compose }*
  
 -  ### 🏗️ Project Design:
  *Page Object Model (POM) design pattern*
