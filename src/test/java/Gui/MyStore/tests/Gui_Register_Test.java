@@ -20,12 +20,11 @@ import utils.Util;
 public class Gui_Register_Test {
 
     WebDriver driver;
-    private JSONFileManager registrationDataJson;
+    private final JSONFileManager registrationDataJson = new JSONFileManager(System.getProperty("registrationDataJson"));
 
     @BeforeMethod
     public void beforeMethod() {
         driver = DriverFactory.getDriver();
-        registrationDataJson = new JSONFileManager(System.getProperty("registrationDataJson"));
     }
 
 

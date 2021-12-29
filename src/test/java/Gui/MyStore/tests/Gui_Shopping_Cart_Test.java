@@ -16,15 +16,12 @@ import org.testng.annotations.Test;
 @Feature("GUI")
 public class Gui_Shopping_Cart_Test {
     WebDriver driver;
-    private JSONFileManager loginDataJson;
-    private JSONFileManager shoppingCartJson;
+    private final JSONFileManager loginDataJson = new JSONFileManager(System.getProperty("loginDataJson"));
+    private final JSONFileManager shoppingCartJson = new JSONFileManager(System.getProperty("BuyProductJson"));
 
     @BeforeMethod
     public void beforeMethod() {
         driver = DriverFactory.getDriver();
-        loginDataJson = new JSONFileManager(System.getProperty("loginDataJson"));
-        shoppingCartJson = new JSONFileManager(System.getProperty("BuyProductJson"));
-
     }
 
     @Description("Given the browser is open, When i navigate to My Store URl, And click on sign in button, And SignIn with Valid Email & Password," +
