@@ -14,8 +14,7 @@ import org.testng.annotations.Test;
 @Epic("My Store")
 @Feature("GUI")
 public class Gui_Search_Product_Test {
-    WebDriver driver;
-
+   private WebDriver driver;
     @BeforeMethod
     public void beforeMethod() {
         driver = DriverFactory.getDriver();

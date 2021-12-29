@@ -6,9 +6,11 @@ import Gui.MyStore.pages.Register_Pages.MyStore_SignIn_Page_1;
 import Gui.MyStore.pages.Register_Pages.MyStore_SignUp_Page_2;
 import com.shaft.driver.DriverFactory;
 import com.shaft.gui.browser.BrowserActions;
+import com.shaft.gui.element.ElementActions;
 import com.shaft.tools.io.JSONFileManager;
 import com.shaft.validation.Validations;
 import io.qameta.allure.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +21,7 @@ import utils.Util;
 @Feature("GUI")
 public class Gui_Register_Test {
 
-    WebDriver driver;
+    private WebDriver driver;
     private final JSONFileManager registrationDataJson = new JSONFileManager(System.getProperty("registrationDataJson"));
 
     @BeforeMethod
@@ -134,7 +136,6 @@ public class Gui_Register_Test {
                 .perform();
 
     }
-
     @AfterMethod
     public void afterMethod(){
         BrowserActions.closeCurrentWindow(driver);

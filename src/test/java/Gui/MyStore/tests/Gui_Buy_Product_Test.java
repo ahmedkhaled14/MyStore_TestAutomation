@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 @Epic("My Store")
 @Feature("GUI")
 public class Gui_Buy_Product_Test {
-    WebDriver driver;
+    private WebDriver driver;
     private final JSONFileManager loginDataJson = new JSONFileManager(System.getProperty("loginDataJson"));
     private final JSONFileManager BuyProductJson = new JSONFileManager(System.getProperty("BuyProductJson"));
 

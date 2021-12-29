@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 @Epic("My Store")
 @Feature("GUI")
 public class Gui_Add_to_Wishlist_Test {
-    WebDriver driver;
+    private WebDriver driver;
 
     @BeforeMethod
     public void beforeMethod(){
