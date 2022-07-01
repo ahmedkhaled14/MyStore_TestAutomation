@@ -4,7 +4,7 @@
  
 # ✨ *My Store* ==> *GUI* *Test Automation* ✨
 ## 💥   Automate different functionalities of an E-commerce website called *"My Store"* 💥
-### Website URL: http://automationpractice.com/index.php
+### 🌐Website URL: http://automationpractice.com/index.php
  
 - ### 📝 The main Frameworks included in the project:
  **SHAFT Engine on the Top of:**
