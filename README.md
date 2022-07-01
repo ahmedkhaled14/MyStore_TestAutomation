@@ -3,7 +3,7 @@
  </div>
  
 # ✨ *My Store* ==> *GUI* *Test Automation* ✨
-## 🔥🔥 Automate different functionalities of an E-commerce website called *"My Store"* 🔥🔥 
+## 💥 Automate different functionalities of an E-commerce website called *"My Store"* 💥
 ### Website URL: http://automationpractice.com/index.php
  
 - ### 📝 The main Frameworks included in the project:
@@ -29,7 +29,7 @@
  *Java Docs*
  
  - ### 🔍️ Covered Test cases in this project :
-#### 1. Test Case - Automate User Registration process.
+#### ✅1. Test Case - Automate User Registration process.
  Steps to Automate:
 1. Open this url  http://automationpractice.com/index.php
 2. Click on sign in link.
@@ -39,14 +39,14 @@
 6. Click on Register button.
 7. Validate that user is created.
 
-#### 2. Test Case - Verify invalid email address error.
+#### ✅2. Test Case - Verify invalid email address error.
 Steps to Automate:
 1. Open this url  http://automationpractice.com/index.php
 2. Click on sign in link.
 3. Enter invalid email address in the email box and click enter.
 4. Validate that an error message is displaying saying "Invalid email address"
 
-#### 3. Test Case - Verify error messages for mandatory fields.
+#### ✅3. Test Case - Verify error messages for mandatory fields.
 Steps to Automate:
 1. Open this url  http://automationpractice.com/index.php
 2. Click on sign in link.
@@ -54,7 +54,7 @@ Steps to Automate:
 4. Leave the mandatory fields (marked with *) blank and click Register button.
 5. Verify that error has been displayed for the mandatory fields.
 
-#### 4. Test Case - Automate 'Search Product' feature of the website.
+#### ✅4. Test Case - Automate 'Search Product' feature of the website.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Move your cursor over Women's link.
@@ -63,7 +63,7 @@ Steps to Automate:
 5. Now enter the same product name in the search bar present on top of page and click search button.
 6. Validate that same product is displayed on searched page with same details which were displayed on T-Shirt's page.
 
-#### 5. Test Case - Automate end-to-end "Buy Product" feature of the website.
+#### ✅5. Test Case - Automate end-to-end "Buy Product" feature of the website.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Login to the website.
@@ -79,7 +79,7 @@ Steps to Automate:
 12. Complete the buy order process till payment.
 13. Make sure that Product is ordered.
 
-#### 6. Test Case - Verify that 'Add to Wishlist' only works after login.
+#### ✅6. Test Case - Verify that 'Add to Wishlist' only works after login.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Move your cursor over Women's link.
@@ -88,7 +88,7 @@ Steps to Automate:
 5. 'Add to Wishlist' will appear on the bottom of that product, click on it.
 6. Verify that error message is displayed 'You must be logged in to manage your wish list.'
 
-#### 7. Test Case - Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
+#### ✅7. Test Case - Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Login to the website.
